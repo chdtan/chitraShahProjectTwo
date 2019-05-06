@@ -1,0 +1,76 @@
+body {
+    font-size: 125%;
+    background-color:$white;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    width: 185px;
+    height: 53px;
+    font-family: $mainFont;
+    background: $green;
+    color: $black;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    display: block;
+    border: none;
+}
+
+
+    // REPEAT BELOW without VARIABLES!!
+
+
+html {
+    font-size: 125%;
+    background-color: #effdf3;
+}
+
+.wrapper {
+    max-width: 1280px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+}
+
+button {
+    width: 185px;
+    height: 53px;
+    font-family: 'Playfair Display', serif;
+    background: #4ceea7;
+    color: #2c2c2c;
+    font-size: 20px;
+    font-weight: bolder;
+    font-style: italic;
+    text-transform: uppercase;
+    display: block;
+    border: none;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 20px;
+}
