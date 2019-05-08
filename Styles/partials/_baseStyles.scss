@@ -1,0 +1,819 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
+
+/* base styles */
+
+
+html {
+    font-size: 125%;
+    background-color: $ice;
+}
+
+/* html {
+    font-size: 20px;
+} */
+
+
+.wrapper {
+    max-width: 1280px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+}
+
+button {
+    width: 200px;
+    height: 53px;
+    font-family: $mainFont;
+    background: $green;
+    color: $black;
+    font-size: 1rem;
+    font-weight: bolder;
+    font-style: italic;
+    text-transform: uppercase;
+    border: none;
+    text-align: center;
+}
+
+.fas {
+    background-color: $green;
+    border-radius: 50%;
+}
+
+h2 {
+    font-family: $mainFont;
+    font-size: 4rem;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    display: inline;
+}
+
+h3 {
+    font-family: $mainFont;
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    display: inline;
+}
+
+h4 {
+    font-family: $mainFont;
+    font-size: 1.625rem;
+    font-style: italic;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1rem;
+}
+
+button:focus, 
+nav li a:focus {
+    border: 10px solid $yellow;
+}
+
+/* HOME header styles */
+
+header.headerHome {
+    background-image: url(../images/01headerImage.jpg);
+    min-height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    width: 100%;
+    display: grid;
+}
+
+.boxHome {
+    position: absolute;
+    right: 0;
+    top: 45%;
+    width: 38%; 
+    box-shadow: 0 0 0 20px $yellow;
+    z-index: 1;
+}
+
+.boxHome img {
+    width: 100%;
+    display: block;
+}
+
+.homeH1 {
+    font-size: 6.9rem;
+    text-transform: uppercase;
+    font-family: $mainFont;
+    font-weight: bold;
+    font-style: italic;
+    z-index: 3;
+    align-self: flex-end;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 100px;
+}
+
+/* ALL Nav styles */
+
+nav ul { 
+    list-style: none;
+    display: flex;
+    align-content: flex-end;
+    justify-content: flex-end;
+    margin-top:0;
+    line-height: 1.6;
+    padding-top: 15px;   
+}
+
+.navFlex ul a{
+    text-decoration: none;
+    color: $black;
+}
+
+nav li {
+    margin-right: 50px;  
+    font-family: $mainFont;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 29px; 
+    letter-spacing: 1px; 
+    text-transform: uppercase;
+    
+}
+
+nav li:hover{
+    border-bottom: 2px solid $green;
+}
+
+/* nav li:last-child {
+    margin-right:100px;
+} */
+
+    /* end of nav styles */
+
+.whatCaptured {
+    padding: 90px 0;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+.whatCaptured h3{
+    font-family: $mainFont;
+    font-size: 2.1rem;
+    font-style: italic;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.whatCaptured p {
+    font-family: $bodyFont;
+    font-size: 1rem;
+}
+
+.twosHome {
+    display: flex;
+    /* border: 1px solid black; */
+}
+
+.skillsImage {
+    /* width: 80%; */
+    /* margin-right: 50px;
+    margin-bottom: 50px; */
+    position: relative;
+    top: -30px;
+    left: 0;
+}
+
+.skillsImage,
+.gearImage {
+    /* display: block; */
+    width: 46%;
+    padding-bottom: 0;
+    /* padding-right: 10px; */ 
+}
+
+.skillsHome,
+.gearHome {
+    width: 60%;
+    padding: 5% 7%;
+    flex-wrap: wrap;
+}
+
+.gearHome h3 {
+    margin-left: 162px;
+}
+
+.gearHome button{
+    margin-left: 325px;
+}
+
+.skillsImage img {
+    box-shadow: 25px 15px $yellow;
+}
+
+.gearImage img {
+    box-shadow: -15px 25px $yellow;
+    position: relative;
+    top: 30px;
+    right: 0;
+
+}
+
+.quadHome {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.quadsHome p {
+    padding-left: 15%;
+    margin-top: 0;
+    
+}
+
+.quadHome1 {
+    margin-top: 60px;
+}
+
+.quadHome2 {
+    margin-bottom: 60px;
+}
+
+
+i.fas {
+    padding: 10px;
+    margin: 20px;
+}
+
+
+/* Month profile section */
+
+.profilePicHome {
+    width: 75%;
+}
+
+.profilePicHome img {
+    box-shadow: 15px 25px $yellow;
+}
+
+.profileParaHome {
+    padding-left: 50px;
+    padding-bottom: 45px; 
+}
+
+.profileHome {
+    display: flex;
+    /* border: 1px solid black; */
+    padding-top: 50px;
+}
+
+/* .profilePickHome {
+    border: 1px solid black;
+} */
+
+
+
+/* gallery for HOME*/
+
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    background: $white;
+    padding: 50px 64px;
+}
+
+.gallery img:nth-child(2){
+    margin: 0 30px;
+}
+
+
+/* footer */
+
+
+footer {
+    background-color: $black;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+footer p{
+    padding:0;
+}
+
+
+.copyright p {
+    text-align: center;
+    color: $white;
+    margin-bottom: 0;
+    padding: 10px 0;
+    font-family: $bodyFont;
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+    /* BLOG STYLES */
+
+
+header.headerBlog {
+    background-image: url(../Images/10blogHeader.jpg);
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    width: 100%;
+    min-height: 30vh;   
+}
+
+.textBlog {
+    display: flex;
+    justify-content: space-between;
+}
+
+.locationsBlog {    
+    /* width: 72%; */
+    border: 1px solid $black;
+    box-shadow: -5px 5px $yellow;
+}
+
+.locationsBlog img {
+    width: 95%;
+    box-shadow: -25px 25px $yellow;
+    position: relative;
+    right: -25px;
+    top: -85px;
+}
+
+.locationsBlog p{
+    margin:0;
+}
+
+.para{
+    padding-top: 40px;
+}
+
+.asideBlog {
+    width: 30%;
+    border: 1px solid black;
+    margin-top: 45px; 
+    margin-right: 40px;
+}
+
+.asideTextBlog{
+    background: white;
+    display: block;
+    /* margin-left: 150px; */
+}
+
+.asideTextBlog h4,
+.asideTextBlog p,
+.asideTextBlog ul {
+    margin-left:82px;
+}
+
+/* .asideTextBlog img{
+    position: relative;
+    top: 0px;
+    left: -35px;
+} */
+
+.rightSideBlog {
+    width: 70%;
+}
+
+.commentBlog {
+    display: flex;
+    width: 72%;
+    margin-top: 60px;
+}
+
+.comment1Blog {
+    padding-left: 40px;
+}
+
+.comment2Blog {
+    padding-left: 40px;
+
+}
+
+  /* Comment Form styles for BLOG and GET IN TOUCH */
+
+/* fieldset row1{
+   padding: 20px;
+   background: none;
+   color: green;
+   display: flex;
+   width: 70%;
+   padding-bottom: 20px;
+} */
+
+
+.inputFormBlog {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    /* background: none; */
+}
+
+.formBlog {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.formGroup {
+    width: 50%;
+}
+
+
+input[type=text] {
+    font-family: $bodyFont;
+    font-size: 20px;
+    background: none;
+    color: $black;
+    border: none;
+    border-bottom: 2px solid $green;
+    width: 290px;
+}
+
+label {
+    display: none;
+}
+
+textarea,
+.formMessage {
+    padding-top: 20px;
+    background: none;
+    color: $black;
+    border: 2px solid $green;
+    
+} 
+
+textarea {
+    width: 85%;
+}
+
+textarea.formMessage {
+    width: 100%;
+}
+
+button.postComment {
+    width: 100%;
+    margin: 1% 0;
+}
+
+
+button.submit {
+    width: 85%;
+    margin: 1% 0;
+}
+
+
+/* Get in touch styles */
+
+.headerInTouch {
+    background-image: url(../Images/15contactHeader.jpg);
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    min-height: 40vh;
+}
+
+.InfoInTouch {
+    display: flex;
+}
+
+.contactInTouch {
+    width: 35%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 80px;
+    padding-right: 30px;
+}
+
+.contactInTouch h4 {
+    font-family: $mainFont;
+    font-size: 1.625rem;
+    font-style: italic;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 5px;
+    padding: 10px 0;
+}
+
+.contactInTouch p{
+    line-height: 1.1;
+}
+
+.fagroup {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+
+.fagroup li {
+    margin-right: 25px;
+}
+
+.formInTouch {
+    margin-left: 30px;
+    width: 55%;
+    // height: 55%;
+    border: 1px solid black;
+    box-shadow: -25px 25px $yellow;
+    position: absolute;
+    right: 30px;
+    top: 175px;
+    background: $white;
+}
+
+@media screen and (max-width: 1280px) {
+    html {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .contactInTouch {
+        width: initial;
+        padding: 30px 50px;
+        margin: 0 auto;
+    }
+
+    .InfoInTouch {
+        flex-direction: column;
+    }
+
+    .formInTouch {
+        margin: 0;
+        width: initial;
+        position: initial;
+        box-shadow: 0 0 0 0px;
+    }
+
+    input[type="text"] {
+        width: inherit;
+    }
+
+}
+
+
+
+@media screen and (max-width: 982px) {
+
+    html {
+        font-size: 70%;
+    }
+}    
+
+@media screen and (max-width: 880px) {
+
+    /* .homeH1 {
+        font-size: 3.0rem;
+        text-align: right;
+        margin-left: 500px;
+    } */
+
+    .gearHome h3 {
+        margin-left: 0px;
+    }
+
+    .gearHome button{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 830px) {
+
+    .asideTextBlog h4, 
+    .asideTextBlog p, 
+    .asideTextBlog ul {
+        margin-left: 0px;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 660px) {
+
+    .navFlex ul{ 
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    nav li:last-child {
+        margin-right: 35px;
+    }
+
+    .quadHome h3{
+        font-size: 1.6rem;
+    }
+
+    .boxHome img{
+        display: none;
+    }
+
+
+    .boxHome {
+        box-shadow: 0 0 0 0px;
+    }
+    
+
+}
+
+@media screen and (max-width: 550px) {    
+    .textBlog {
+        display: initial;
+    }
+    .asideBlog {    
+        width: 100%;
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    .rightSideBlog {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .locationsBlog img {
+        width: 100%;
+        box-shadow: 0 0 0 0px;
+        position: initial;
+    }
+
+    .commentBlog {
+        display: flex;
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    .formBlog {
+        display: initial;
+    }
+
+    .formGroup,
+    textarea,
+    button.submit  {
+        width: 100%;
+    }
+
+    .comment1Blog,
+    .comment2Blog {
+        text-align: left;
+        padding-left: 10px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 450px) {    
+
+
+    .homeH1 {
+        font-size: 3rem;
+        z-index: 3;
+        align-self: flex-start;
+        /* margin-bottom: 100px; */
+    }
+
+    .navFlex ul{ 
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    nav li:last-child {
+        margin-right: 35px;
+    }
+
+    .quadHome h3{
+        font-size: 1.6rem;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 320px) {
+    
+    .homeH1 {
+        font-size: 2rem;
+        z-index: 3;
+        align-self: flex-start;
+        /* margin-bottom: 100px; */
+    }
+
+
+    header.headerHome {
+        min-height: 26vh;
+    }    
+
+    .boxHome img {
+        display: none;
+    } 
+
+
+    /* .homeH1 {
+        font-size: 2.2rem;
+        text-transform: uppercase;
+        font-family: 'Playfair Display', serif;
+        font-weight: bold;
+        font-style: italic;
+        margin-top: 0;
+        position: absolute;
+        top: 18%;
+        left: 75px;
+    } */
+
+    .whatCaptured {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .skillsHome,
+    .gearHome {
+        padding: 4% 9%;
+    }
+
+    .skillsHome button,
+    .gearHome button {
+        width: 118px;
+        height: 40px;
+    }
+    .quadHome h3{
+        font-size: 1rem;
+    }
+
+    i.fas {
+        padding: 2px;
+        margin: 10px;
+    }
+
+    .profileParaHome {
+        padding-left: 0;
+    }
+
+    .profilePicHome img {
+        box-shadow: 0 0 0 0px;
+    }
+
+
+    .contactInTouch {
+    width: initial;
+    padding: 30px 50px;
+    }
+
+    .InfoInTouch {
+        flex-direction: column;
+    }
+
+    .formInTouch {
+        margin: 0;
+        width: initial;
+        position: initial;
+        box-shadow: 0 0 0 0px;
+    }
+
+    input[type="text"] {
+        width: inherit;
+    }
+
+}    
+
+    
+
+
+
+
+
+
+
+
+    

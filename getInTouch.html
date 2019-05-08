@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Get in Touch</title>
     <link rel="stylesheet" href="Styles/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="Styles/stylesforhome.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700i|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
@@ -14,48 +15,67 @@
 <header class="headerInTouch">
     <nav class="navFlex">
         <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Blog</li>
-            <li>Contact</li>
+            <li><a href="index.html">Home</a></li>
+            <a href="blog.html#about">
+                <li>About</li>
+            </a>
+            <li><a href="blog.html">Blog</a></li>
+            </a>
+            <li><a href="getInTouch.html">Contact</a></li>
         </ul>
     </nav>
+
+    <h2 class="touchH1">Get In Touch</h2>
+
 </header>
 
-<form class="commentBlog">
-    <div class="row">
-        <div class="col-sm-6 form-group">
-            <label class="name"></label>
-            <input type="text" class="formName" placeholder="Name">
-        </div>
-        <div class="col-sm-6 form-group">
-            <label class="email"></label>
-            <input type="text" class="formEmail" placeholder="Email">
-        </div>
-        <div class="clearfix"></div>
-        <div class="col-md-12 form-group">
-            <label class="comments""></label>
-            <textarea name=" text" class="formComments" cols="47" rows="7" placeholder="Comment"></textarea>
-        </div>
-        <div class="col-md-12 form-group">
-            <button class="btn btn-block btn-lg btn-success">Post Comment</button>
-        </div>
+<section class="wrapper InfoInTouch">
+    <aside class="contactInTouch">
+        <ul class="fagroup">
+            <li><i class="fab fa-facebook-f"></i></li>
+            <li><i class="fab fa-instagram"></i></li>
+            <li><i class="fab fa-twitter"></i></li>
+            <li><i class="fab fa-whatsapp"></i></li>
+        </ul>
+        <h4>Info@Email.com</h4>
+        <p>123-456-7890</p>
+        <p>128 Queen Street West, Unit 10</p>
+        <p>Toronto, Ontario</p>
+        <p>M5V2D5</p>
+    </aside>
+
+    <section class="inputFormBlog">
+        <section class="formInTouch">    
+            <form class="formBlog">
+                
+                <div class="formGroup">
+                    <label class="name">Name</label>
+                    <input type="text" class="formName" name="Name" placeholder="Name">
+                </div>
+
+                <div class="formGroup">
+                    <label class="email">Email</label>
+                    <input type="text" class="formEmail" name="email" placeholder="Email address">
+                </div>
+                
+            </form>
+                
+            <textarea name="text" class="formMessage"
+                cols="80" rows="10" placeholder="Submit">
+            </textarea>
+        
+    
+            <button class="postComment">Post Comment</button>
+        </section>    
+    </section>
+</section>
+
+
+<footer>
+    <div class="copyright">
+        <p>Copyright &copy 2018 HackerYou</p>
     </div>
-</form>
-
-<aside>
-    <ul class="fagroup">
-        <li><i class="fab fa-facebook-f"></i></li>
-        <li><i class="fab fa-instagram"></i></li>
-        <li><i class="fab fa-twitter"></i></li>
-        <li><i class="fab fa-whatsapp"></i></li>
-    </ul>
-
-    <p>123-456-7890</p>
-    <p>128 Queen  Street West, Unit 10</p>
-    <p>Toronto, Ontario</p>
-    <p>M5V2D5</p>
-</aside>
+</footer>
 
 </body>
 </html>

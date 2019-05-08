@@ -1,0 +1,213 @@
+
+@media screen and (max-width: 1280px) {
+    html {
+    font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 982px) {
+
+    html {
+        font-size: 70%;
+    }
+}    
+
+@media screen and (max-width: 880px) {
+
+    /* .homeH1 {
+        font-size: 3.0rem;
+        text-align: right;
+        margin-left: 500px;
+    } */
+
+    .gearHome h3 {
+        margin-left: 0px;
+    }
+
+    .gearHome button{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 830px) {
+
+    .asideTextBlog h4, 
+    .asideTextBlog p, 
+    .asideTextBlog ul {
+        margin-left: 0px;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 660px) {
+
+    .navFlex ul{ 
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    nav li:last-child {
+        margin-right: 35px;
+    }
+
+    .quadHome h3{
+        font-size: 1.6rem;
+    }
+
+    .boxHome img{
+        display: none;
+    }
+
+
+    .boxHome {
+        box-shadow: 0 0 0 0px;
+    }
+    
+
+}
+
+@media screen and (max-width: 550px) {    
+    .textBlog {
+        display: initial;
+    }
+    .asideBlog {    
+        width: 100%;
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    .rightSideBlog {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .locationsBlog img {
+        width: 100%;
+        box-shadow: 0 0 0 0px;
+        position: initial;
+    }
+
+    .commentBlog {
+        display: flex;
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    .formBlog {
+        display: initial;
+    }
+
+    .formGroup,
+    textarea,
+    button.submit  {
+        width: 100%;
+    }
+
+    .comment1Blog,
+    .comment2Blog {
+        text-align: left;
+        padding-left: 10px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 450px) {    
+
+
+    .homeH1 {
+        font-size: 3rem;
+        z-index: 3;
+        align-self: flex-start;
+        /* margin-bottom: 100px; */
+    }
+
+    .navFlex ul{ 
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    nav li:last-child {
+        margin-right: 35px;
+    }
+
+    .quadHome h3{
+        font-size: 1.6rem;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 320px) {
+    
+    .homeH1 {
+        font-size: 2rem;
+        z-index: 3;
+        align-self: flex-start;
+        /* margin-bottom: 100px; */
+    }
+
+
+    header.headerHome {
+        min-height: 26vh;
+    }    
+
+    .boxHome img {
+        display: none;
+    } 
+
+
+    /* .homeH1 {
+        font-size: 2.2rem;
+        text-transform: uppercase;
+        font-family: 'Playfair Display', serif;
+        font-weight: bold;
+        font-style: italic;
+        margin-top: 0;
+        position: absolute;
+        top: 18%;
+        left: 75px;
+    } */
+
+    .whatCaptured {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .skillsHome,
+    .gearHome {
+        padding: 4% 9%;
+    }
+
+    .skillsHome button,
+    .gearHome button {
+        width: 118px;
+        height: 40px;
+    }
+    .quadHome h3{
+        font-size: 1rem;
+    }
+
+    i.fas {
+        padding: 2px;
+        margin: 10px;
+    }
+
+    .profileParaHome {
+        padding-left: 0;
+}
+
+    .profilePicHome img {
+        box-shadow: 0 0 0 0px;
+    }
+}    
