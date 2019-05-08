@@ -297,9 +297,6 @@ html {
   font-size: 125%;
   background-color: #effdf3; }
 
-/* html {
-    font-size: 20px;
-} */
 .wrapper {
   max-width: 1280px;
   width: 90%;
@@ -431,9 +428,6 @@ nav li {
 nav li:hover {
   border-bottom: 2px solid #4ceea7; }
 
-/* nav li:last-child {
-    margin-right:100px;
-} */
 /* end of nav styles */
 .whatCaptured {
   padding: 90px 0;
@@ -455,23 +449,17 @@ nav li:hover {
 .twosHome {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  /* border: 1px solid black; */ }
+  display: flex; }
 
 .skillsImage {
-  /* width: 80%; */
-  /* margin-right: 50px;
-    margin-bottom: 50px; */
   position: relative;
   top: -30px;
   left: 0; }
 
 .skillsImage,
 .gearImage {
-  /* display: block; */
   width: 46%;
-  padding-bottom: 0;
-  /* padding-right: 10px; */ }
+  padding-bottom: 0; }
 
 .skillsHome,
 .gearHome {
@@ -540,12 +528,8 @@ i.fas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /* border: 1px solid black; */
   padding-top: 50px; }
 
-/* .profilePickHome {
-    border: 1px solid black;
-} */
 /* gallery for HOME*/
 .gallery {
   display: -webkit-box;
@@ -579,6 +563,9 @@ footer p {
   margin-top: 0; }
 
 /* BLOG STYLES */
+.viewHeigthFix {
+  min-height: 95vh; }
+
 header.headerBlog {
   background-image: url(../Images/10blogHeader.jpg);
   background-position: center center;
@@ -597,7 +584,6 @@ header.headerBlog {
 
 .locationsBlog {
   /* width: 72%; */
-  border: 1px solid #2c2c2c;
   -webkit-box-shadow: -5px 5px #fdfa69;
   box-shadow: -5px 5px #fdfa69; }
 
@@ -617,25 +603,18 @@ header.headerBlog {
 
 .asideBlog {
   width: 30%;
-  border: 1px solid black;
   margin-top: 45px;
   margin-right: 40px; }
 
 .asideTextBlog {
   background: white;
-  display: block;
-  /* margin-left: 150px; */ }
+  display: block; }
 
 .asideTextBlog h4,
 .asideTextBlog p,
 .asideTextBlog ul {
   margin-left: 82px; }
 
-/* .asideTextBlog img{
-    position: relative;
-    top: 0px;
-    left: -35px;
-} */
 .rightSideBlog {
   width: 70%; }
 
@@ -653,14 +632,6 @@ header.headerBlog {
   padding-left: 40px; }
 
 /* Comment Form styles for BLOG and GET IN TOUCH */
-/* fieldset row1{
-   padding: 20px;
-   background: none;
-   color: green;
-   display: flex;
-   width: 70%;
-   padding-bottom: 20px;
-} */
 .inputFormBlog {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -669,8 +640,7 @@ header.headerBlog {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-top: 20px;
-  /* background: none; */ }
+  padding-top: 20px; }
 
 .formBlog {
   display: -webkit-box;
@@ -700,7 +670,8 @@ textarea,
   padding-top: 20px;
   background: none;
   color: #2c2c2c;
-  border: 2px solid #4ceea7; }
+  border: 2px solid #4ceea7;
+  resize: none; }
 
 textarea {
   width: 85%; }
@@ -761,13 +732,14 @@ button.submit {
 .formInTouch {
   margin-left: 30px;
   width: 55%;
-  border: 1px solid black;
   -webkit-box-shadow: -25px 25px #fdfa69;
   box-shadow: -25px 25px #fdfa69;
   position: absolute;
   right: 30px;
   top: 175px;
-  background: #fafafa; }
+  background: #fafafa;
+  padding: 20px 20px;
+  resize: none; }
 
 @media screen and (max-width: 1280px) {
   html {
@@ -776,6 +748,10 @@ button.submit {
 @media screen and (max-width: 1220px) {
   html {
     font-size: 80%; } }
+
+@media screen and (max-width: 982px) {
+  html {
+    font-size: 70%; } }
 
 @media screen and (max-width: 920px) {
   .contactInTouch {
@@ -796,16 +772,7 @@ button.submit {
   input[type="text"] {
     width: inherit; } }
 
-@media screen and (max-width: 982px) {
-  html {
-    font-size: 70%; } }
-
 @media screen and (max-width: 880px) {
-  /* .homeH1 {
-        font-size: 3.0rem;
-        text-align: right;
-        margin-left: 500px;
-    } */
   .gearHome h3 {
     margin-left: 0px; }
   .gearHome button {
@@ -874,8 +841,7 @@ button.submit {
     font-size: 3rem;
     z-index: 3;
     -ms-flex-item-align: start;
-    align-self: flex-start;
-    /* margin-bottom: 100px; */ }
+    align-self: flex-start; }
   .navFlex ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -886,30 +852,18 @@ button.submit {
   nav li:last-child {
     margin-right: 35px; }
   .quadHome h3 {
-    font-size: 1.6rem; } }
+    font-size: 1rem; } }
 
 @media screen and (max-width: 320px) {
   .homeH1 {
     font-size: 2rem;
     z-index: 3;
     -ms-flex-item-align: start;
-    align-self: flex-start;
-    /* margin-bottom: 100px; */ }
+    align-self: flex-start; }
   header.headerHome {
     min-height: 26vh; }
   .boxHome img {
     display: none; }
-  /* .homeH1 {
-        font-size: 2.2rem;
-        text-transform: uppercase;
-        font-family: 'Playfair Display', serif;
-        font-weight: bold;
-        font-style: italic;
-        margin-top: 0;
-        position: absolute;
-        top: 18%;
-        left: 75px;
-    } */
   .whatCaptured {
     margin-top: 0;
     margin-bottom: 0; }
@@ -920,8 +874,6 @@ button.submit {
   .gearHome button {
     width: 118px;
     height: 40px; }
-  .quadHome h3 {
-    font-size: 1rem; }
   i.fas {
     padding: 2px;
     margin: 10px; }
@@ -946,146 +898,3 @@ button.submit {
     box-shadow: 0 0 0 0px; }
   input[type="text"] {
     width: inherit; } }
-
-@media screen and (max-width: 1280px) {
-  html {
-    font-size: 1rem; } }
-
-@media screen and (max-width: 1220px) {
-  html {
-    font-size: 80%; } }
-
-@media screen and (max-width: 982px) {
-  html {
-    font-size: 70%; } }
-
-@media screen and (max-width: 880px) {
-  /* .homeH1 {
-        font-size: 3.0rem;
-        text-align: right;
-        margin-left: 500px;
-    } */
-  .gearHome h3 {
-    margin-left: 0px; }
-  .gearHome button {
-    margin-left: 0; } }
-
-@media screen and (max-width: 830px) {
-  .asideTextBlog h4,
-  .asideTextBlog p,
-  .asideTextBlog ul {
-    margin-left: 0px;
-    text-align: left; } }
-
-@media screen and (max-width: 660px) {
-  .navFlex ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-pack: distribute;
-    justify-content: space-around; }
-  nav li:last-child {
-    margin-right: 35px; }
-  .quadHome h3 {
-    font-size: 1.6rem; }
-  .boxHome img {
-    display: none; }
-  .boxHome {
-    -webkit-box-shadow: 0 0 0 0px;
-    box-shadow: 0 0 0 0px; } }
-
-@media screen and (max-width: 550px) {
-  .textBlog {
-    display: initial; }
-  .asideBlog {
-    width: 100%;
-    margin-top: 0;
-    margin-right: 0; }
-  .rightSideBlog {
-    width: 100%;
-    text-align: center;
-    margin: 0 auto; }
-  .locationsBlog img {
-    width: 100%;
-    -webkit-box-shadow: 0 0 0 0px;
-    box-shadow: 0 0 0 0px;
-    position: initial; }
-  .commentBlog {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    margin-top: 60px; }
-  .formBlog {
-    display: initial; }
-  .formGroup,
-  textarea,
-  button.submit {
-    width: 100%; }
-  .comment1Blog,
-  .comment2Blog {
-    text-align: left;
-    padding-left: 10px; } }
-
-@media screen and (max-width: 450px) {
-  .homeH1 {
-    font-size: 3rem;
-    z-index: 3;
-    -ms-flex-item-align: start;
-    align-self: flex-start;
-    /* margin-bottom: 100px; */ }
-  .navFlex ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-pack: distribute;
-    justify-content: space-around; }
-  nav li:last-child {
-    margin-right: 35px; }
-  .quadHome h3 {
-    font-size: 1.6rem; } }
-
-@media screen and (max-width: 320px) {
-  .homeH1 {
-    font-size: 2rem;
-    z-index: 3;
-    -ms-flex-item-align: start;
-    align-self: flex-start;
-    /* margin-bottom: 100px; */ }
-  header.headerHome {
-    min-height: 26vh; }
-  .boxHome img {
-    display: none; }
-  /* .homeH1 {
-        font-size: 2.2rem;
-        text-transform: uppercase;
-        font-family: 'Playfair Display', serif;
-        font-weight: bold;
-        font-style: italic;
-        margin-top: 0;
-        position: absolute;
-        top: 18%;
-        left: 75px;
-    } */
-  .whatCaptured {
-    margin-top: 0;
-    margin-bottom: 0; }
-  .skillsHome,
-  .gearHome {
-    padding: 4% 9%; }
-  .skillsHome button,
-  .gearHome button {
-    width: 118px;
-    height: 40px; }
-  .quadHome h3 {
-    font-size: 1rem; }
-  i.fas {
-    padding: 2px;
-    margin: 10px; }
-  .profileParaHome {
-    padding-left: 0; }
-  .profilePicHome img {
-    -webkit-box-shadow: 0 0 0 0px;
-    box-shadow: 0 0 0 0px; } }

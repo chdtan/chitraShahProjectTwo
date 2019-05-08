@@ -14,11 +14,6 @@ html {
     background-color: $ice;
 }
 
-/* html {
-    font-size: 20px;
-} */
-
-
 .wrapper {
     max-width: 1280px;
     width: 90%;
@@ -91,7 +86,7 @@ nav li a:focus {
     border: 10px solid $yellow;
 }
 
-/* HOME header styles */
+    /* HOME header styles */
 
 header.headerHome {
     background-image: url(../images/01headerImage.jpg);
@@ -130,7 +125,7 @@ header.headerHome {
     margin-bottom: 100px;
 }
 
-/* ALL Nav styles */
+    /* ALL Nav styles */
 
 nav ul { 
     list-style: none;
@@ -163,10 +158,6 @@ nav li:hover{
     border-bottom: 2px solid $green;
 }
 
-/* nav li:last-child {
-    margin-right:100px;
-} */
-
     /* end of nav styles */
 
 .whatCaptured {
@@ -191,13 +182,9 @@ nav li:hover{
 
 .twosHome {
     display: flex;
-    /* border: 1px solid black; */
 }
 
 .skillsImage {
-    /* width: 80%; */
-    /* margin-right: 50px;
-    margin-bottom: 50px; */
     position: relative;
     top: -30px;
     left: 0;
@@ -205,10 +192,8 @@ nav li:hover{
 
 .skillsImage,
 .gearImage {
-    /* display: block; */
     width: 46%;
     padding-bottom: 0;
-    /* padding-right: 10px; */ 
 }
 
 .skillsHome,
@@ -266,7 +251,7 @@ i.fas {
 }
 
 
-/* Month profile section */
+    /* Month profile section */
 
 .profilePicHome {
     width: 75%;
@@ -283,17 +268,11 @@ i.fas {
 
 .profileHome {
     display: flex;
-    /* border: 1px solid black; */
     padding-top: 50px;
 }
 
-/* .profilePickHome {
-    border: 1px solid black;
-} */
 
-
-
-/* gallery for HOME*/
+    /* gallery for HOME*/
 
 
 .gallery {
@@ -308,7 +287,7 @@ i.fas {
 }
 
 
-/* footer */
+    /* footer */
 
 
 footer {
@@ -334,6 +313,9 @@ footer p{
 
     /* BLOG STYLES */
 
+.viewHeigthFix {
+    min-height: 95vh;
+}
 
 header.headerBlog {
     background-image: url(../Images/10blogHeader.jpg);
@@ -351,7 +333,6 @@ header.headerBlog {
 
 .locationsBlog {    
     /* width: 72%; */
-    border: 1px solid $black;
     box-shadow: -5px 5px $yellow;
 }
 
@@ -373,7 +354,6 @@ header.headerBlog {
 
 .asideBlog {
     width: 30%;
-    border: 1px solid black;
     margin-top: 45px; 
     margin-right: 40px;
 }
@@ -381,7 +361,7 @@ header.headerBlog {
 .asideTextBlog{
     background: white;
     display: block;
-    /* margin-left: 150px; */
+
 }
 
 .asideTextBlog h4,
@@ -390,11 +370,6 @@ header.headerBlog {
     margin-left:82px;
 }
 
-/* .asideTextBlog img{
-    position: relative;
-    top: 0px;
-    left: -35px;
-} */
 
 .rightSideBlog {
     width: 70%;
@@ -417,21 +392,12 @@ header.headerBlog {
 
   /* Comment Form styles for BLOG and GET IN TOUCH */
 
-/* fieldset row1{
-   padding: 20px;
-   background: none;
-   color: green;
-   display: flex;
-   width: 70%;
-   padding-bottom: 20px;
-} */
-
 
 .inputFormBlog {
     display: flex;
     flex-direction: column;
     padding-top: 20px;
-    /* background: none; */
+
 }
 
 .formBlog {
@@ -465,6 +431,7 @@ textarea,
     background: none;
     color: $black;
     border: 2px solid $green;
+    resize: none;
     
 } 
 
@@ -488,7 +455,7 @@ button.submit {
 }
 
 
-/* Get in touch styles */
+    /* Get in touch styles */
 
 .headerInTouch {
     background-image: url(../Images/15contactHeader.jpg);
@@ -537,13 +504,13 @@ button.submit {
 .formInTouch {
     margin-left: 30px;
     width: 55%;
-    // height: 55%;
-    border: 1px solid black;
     box-shadow: -25px 25px $yellow;
     position: absolute;
     right: 30px;
     top: 175px;
     background: $white;
+    padding: 20px 20px; 
+    resize: none;
 }
 
 @media screen and (max-width: 1280px) {
@@ -557,6 +524,13 @@ button.submit {
         font-size: 80%;
     }
 }
+
+@media screen and (max-width: 982px) {
+
+    html {
+        font-size: 70%;
+    }
+}   
 
 @media screen and (max-width: 920px) {
     .contactInTouch {
@@ -583,21 +557,7 @@ button.submit {
 }
 
 
-
-@media screen and (max-width: 982px) {
-
-    html {
-        font-size: 70%;
-    }
-}    
-
 @media screen and (max-width: 880px) {
-
-    /* .homeH1 {
-        font-size: 3.0rem;
-        text-align: right;
-        margin-left: 500px;
-    } */
 
     .gearHome h3 {
         margin-left: 0px;
@@ -700,7 +660,6 @@ button.submit {
         font-size: 3rem;
         z-index: 3;
         align-self: flex-start;
-        /* margin-bottom: 100px; */
     }
 
     .navFlex ul{ 
@@ -713,7 +672,7 @@ button.submit {
     }
 
     .quadHome h3{
-        font-size: 1.6rem;
+        font-size: 1rem;
     }
 
 }
@@ -727,7 +686,6 @@ button.submit {
         font-size: 2rem;
         z-index: 3;
         align-self: flex-start;
-        /* margin-bottom: 100px; */
     }
 
 
@@ -738,19 +696,6 @@ button.submit {
     .boxHome img {
         display: none;
     } 
-
-
-    /* .homeH1 {
-        font-size: 2.2rem;
-        text-transform: uppercase;
-        font-family: 'Playfair Display', serif;
-        font-weight: bold;
-        font-style: italic;
-        margin-top: 0;
-        position: absolute;
-        top: 18%;
-        left: 75px;
-    } */
 
     .whatCaptured {
         margin-top: 0;
@@ -767,9 +712,6 @@ button.submit {
         width: 118px;
         height: 40px;
     }
-    .quadHome h3{
-        font-size: 1rem;
-    }
 
     i.fas {
         padding: 2px;
@@ -784,10 +726,9 @@ button.submit {
         box-shadow: 0 0 0 0px;
     }
 
-
     .contactInTouch {
-    width: initial;
-    padding: 30px 50px;
+        width: initial;
+        padding: 30px 50px;
     }
 
     .InfoInTouch {
